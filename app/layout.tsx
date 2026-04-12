@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const powerGrotesk = localFont({
+  src: "../public/fonts/PowerGrotesk-Regular.ttf",
+  variable: "--font-display",
+  display: "swap",
+  weight: "400 700",
+  preload: true,
+});
+
+const nunito = localFont({
+  src: "../public/fonts/Nunito-VariableFont_wght.ttf",
+  variable: "--font-sans",
+  display: "swap",
+  weight: "200 900",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://synergymarketing.ch"),
@@ -65,7 +82,10 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning>
+    <html
+      className={`${powerGrotesk.variable} ${nunito.variable}`}
+      suppressHydrationWarning
+    >
       <body>{children}</body>
     </html>
   );

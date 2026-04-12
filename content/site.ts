@@ -311,6 +311,24 @@ const de = {
     primary: "Kostenloses Erstgespräch buchen",
     secondary: "Projekt anfragen",
   },
+  workshop: {
+    eyebrow: "Wachstums-Intensivworkshop",
+    badge: "Risikofrei",
+    headline: "Ihr Wachstumsfahrplan – in 4 Stunden gemeinsam erarbeitet.",
+    price: "690 CHF",
+    priceNote: "einmalig, exkl. MwSt. — voll anrechenbar",
+    body:
+      "In einem intensiven 4-Stunden-Workshop gehen wir gemeinsam eng und strukturiert durch die drei Dimensionen, die über Ihr Wachstum entscheiden: die Vergangenheit Ihres Unternehmens, den ehrlichen Status quo und das konkrete Zielbild für die Zukunft. Das Ergebnis: eine dokumentierte Situationsanalyse und ein klarer, priorisierter Projektplan, den Sie unmittelbar umsetzen können – mit oder ohne uns.",
+    highlights: [
+      "Vergangenheit — was hat bisher funktioniert, was nicht und warum",
+      "Status quo — ehrliche Analyse von Angebot, Sales-Prozess, Funnel und Marketing",
+      "Zukunft — klares Zielbild, priorisierte Hebel, realistischer Zeitplan",
+      "Dokumentierter Wachstumsfahrplan mit konkreten nächsten Schritten",
+    ],
+    credit:
+      "Entscheiden Sie sich anschliessend für eine Zusammenarbeit, werden die vollen 690 CHF vom Projekthonorar abgezogen. Sie zahlen also effektiv nichts – und gehen in jedem Fall mit einem fertigen Fahrplan nach Hause.",
+    cta: "Wachstumsfahrplan sichern",
+  },
   contactForm: {
     eyebrow: "Projektanfrage",
     headline: "Lassen Sie uns über Ihr Wachstum sprechen.",
@@ -638,6 +656,24 @@ const en = {
       "Whether sales structure, funnel or campaigns are the right lever first depends on where you stand today. We'll help you find the right order — and build a system that actually works.",
     primary: "Book a free intro call",
     secondary: "Submit a project",
+  },
+  workshop: {
+    eyebrow: "Growth intensive",
+    badge: "Risk-free",
+    headline: "Your growth roadmap — built with you in 4 hours.",
+    price: "CHF 690",
+    priceNote: "one-off, excl. VAT — fully credited",
+    body:
+      "In one intensive 4-hour workshop we work through the three dimensions that decide whether a company scales: where you've come from, where you honestly stand today, and where you want to go. You leave with a documented situation analysis and a clear, prioritised project plan you can put to work immediately — with or without us.",
+    highlights: [
+      "Past — what has worked, what hasn't, and why",
+      "Status quo — honest review of offer, sales process, funnel and marketing",
+      "Future — clear target picture, prioritised levers, realistic timeline",
+      "Documented growth roadmap with concrete next steps",
+    ],
+    credit:
+      "If you decide to work with us afterwards, the full CHF 690 are credited against the project investment. So effectively you pay nothing — and either way you walk away with a finished roadmap.",
+    cta: "Secure my growth roadmap",
   },
   contactForm: {
     eyebrow: "Project enquiry",

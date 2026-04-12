@@ -35,10 +35,11 @@ export default function Navigation({ locale }: { locale: Locale }) {
           <Image
             src="/logo-white.png"
             alt="Synergy Marketing"
-            width={180}
-            height={40}
+            width={320}
+            height={72}
             priority
-            className="h-8 md:h-9 w-auto"
+            sizes="(min-width: 1024px) 220px, 160px"
+            className="h-12 sm:h-14 md:h-16 lg:h-[72px] w-auto"
           />
         </Link>
 
@@ -74,7 +75,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
       {open && (
         <div className="fixed inset-0 z-50 bg-ink-900/98 backdrop-blur-2xl flex flex-col lg:hidden animate-[fadeUp_.3s_ease-out]">
           <div className="container-tight flex items-center justify-between py-4">
-            <Image src="/logo-white.png" alt="Synergy Marketing" width={180} height={40} className="h-8 w-auto" />
+            <Image src="/logo-white.png" alt="Synergy Marketing" width={320} height={72} className="h-12 sm:h-14 w-auto" />
             <button className="p-2 text-white" aria-label="Close" onClick={() => setOpen(false)}>
               <Close className="h-6 w-6" />
             </button>
@@ -93,7 +94,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
               ))}
             </div>
             <div className="flex flex-col gap-4">
-              <LanguageSwitch currentLocale={locale} />
+              <LanguageSwitch currentLocale={locale} onNavigate={() => setOpen(false)} />
               <a href="#kontakt" onClick={() => setOpen(false)} className="btn-primary w-full">
                 {t.cta}
               </a>
