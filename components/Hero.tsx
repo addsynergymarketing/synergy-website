@@ -12,8 +12,13 @@ export default function Hero({ locale }: { locale: Locale }) {
         aria-hidden
       />
       <div
-        className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full opacity-40 blur-3xl"
+        className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full opacity-40 blur-3xl animate-float-slow"
         style={{ background: "radial-gradient(circle, #504DFF 0%, transparent 70%)" }}
+        aria-hidden
+      />
+      <div
+        className="absolute top-40 right-[-10%] h-[360px] w-[360px] rounded-full opacity-20 blur-3xl animate-float-slower"
+        style={{ background: "radial-gradient(circle, #854CFF 0%, transparent 70%)" }}
         aria-hidden
       />
 

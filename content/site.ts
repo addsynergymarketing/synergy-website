@@ -24,9 +24,9 @@ const de = {
   nav: {
     items: [
       { href: "#leistungen", label: "Leistungen" },
-      { href: "#warum-wir", label: "Warum wir" },
       { href: "#prozess", label: "Prozess" },
       { href: "#ergebnisse", label: "Ergebnisse" },
+      { href: "#workshop", label: "Workshop" },
       { href: "#faq", label: "FAQ" },
     ],
     cta: "Projekt starten",
@@ -371,9 +371,9 @@ const en = {
   nav: {
     items: [
       { href: "#services", label: "Services" },
-      { href: "#why-us", label: "Why us" },
       { href: "#process", label: "Process" },
       { href: "#results", label: "Results" },
+      { href: "#workshop", label: "Workshop" },
       { href: "#faq", label: "FAQ" },
     ],
     cta: "Start a project",

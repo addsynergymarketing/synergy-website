@@ -54,6 +54,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <Reveal>
           <Cases locale={locale} />
         </Reveal>
+        <Workshop locale={locale} />
         <Reveal>
           <Testimonials locale={locale} />
         </Reveal>
@@ -63,7 +64,6 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <Reveal>
           <Founder locale={locale} />
         </Reveal>
-        <Workshop locale={locale} />
         <Reveal>
           <FAQ locale={locale} />
         </Reveal>

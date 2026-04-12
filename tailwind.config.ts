@@ -64,12 +64,18 @@ const config: Config = {
           "linear-gradient(135deg, #504DFF 0%, #854CFF 100%)",
       },
       animation: {
-        "fade-up": "fadeUp 0.7s ease-out both",
+        "fade-up": "fadeUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "float-slow": "floatSlow 14s ease-in-out infinite",
+        "float-slower": "floatSlow 22s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(16px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
+          "0%": { opacity: "0", transform: "translateY(24px)", filter: "blur(6px)" },
+          "100%": { opacity: "1", transform: "translateY(0)", filter: "blur(0)" },
+        },
+        floatSlow: {
+          "0%, 100%": { transform: "translate3d(0, 0, 0)" },
+          "50%": { transform: "translate3d(0, -18px, 0)" },
         },
       },
     },
