@@ -38,8 +38,8 @@ export default function Navigation({ locale }: { locale: Locale }) {
             width={320}
             height={72}
             priority
-            sizes="(min-width: 1024px) 220px, 160px"
-            className="h-12 sm:h-14 md:h-16 lg:h-[72px] w-auto"
+            sizes="(min-width: 1024px) 280px, 200px"
+            className="h-14 sm:h-16 md:h-20 lg:h-[88px] w-auto"
           />
         </Link>
 
@@ -73,14 +73,20 @@ export default function Navigation({ locale }: { locale: Locale }) {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="fixed inset-0 z-50 bg-ink-900/98 backdrop-blur-2xl flex flex-col lg:hidden animate-[fadeUp_.3s_ease-out]">
+        <div className="fixed inset-0 top-0 left-0 w-full h-full z-[9999] bg-ink-900 flex flex-col lg:hidden" style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: 9999 }}>
           <div className="container-tight flex items-center justify-between py-4">
-            <Image src="/logo-white.png" alt="Synergy Marketing" width={320} height={72} className="h-12 sm:h-14 w-auto" />
+            <Image src="/logo-white.png" alt="Synergy Marketing" width={320} height={72} className="h-14 sm:h-16 w-auto" />
             <button className="p-2 text-white" aria-label="Close" onClick={() => setOpen(false)}>
               <Close className="h-6 w-6" />
             </button>
           </div>
-          <div className="container-tight flex-1 flex flex-col justify-between pt-8 pb-10">
+
+          {/* Language switch prominent at top */}
+          <div className="container-tight flex items-center gap-3 pb-4">
+            <LanguageSwitch currentLocale={locale} onNavigate={() => setOpen(false)} variant="mobile" />
+          </div>
+
+          <div className="container-tight flex-1 flex flex-col justify-between pt-4 pb-10 overflow-y-auto">
             <div className="flex flex-col gap-6">
               {t.items.map((item) => (
                 <a
@@ -93,8 +99,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
                 </a>
               ))}
             </div>
-            <div className="flex flex-col gap-4">
-              <LanguageSwitch currentLocale={locale} onNavigate={() => setOpen(false)} />
+            <div className="flex flex-col gap-4 mt-8">
               <a href="#kontakt" onClick={() => setOpen(false)} className="btn-primary w-full">
                 {t.cta}
               </a>

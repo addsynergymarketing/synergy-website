@@ -14,7 +14,7 @@ export default function Footer({ locale }: { locale: Locale }) {
         <div className="grid md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
             <Link href={`/${locale}`} className="inline-flex items-center gap-3 mb-5">
-              <Image src="/logo-white.png" alt="Synergy Marketing" width={180} height={40} className="h-8 w-auto" />
+              <Image src="/logo-white.png" alt="Synergy Marketing" width={240} height={54} className="h-11 w-auto" />
             </Link>
             <p className="text-white/55 max-w-xs leading-relaxed text-sm">{t.tagline}</p>
           </div>

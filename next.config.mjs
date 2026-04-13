@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   poweredByHeader: false,
+  trailingSlash: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-  },
-  async redirects() {
-    return [
-      { source: "/", destination: "/de", permanent: false },
-    ];
+    unoptimized: true,
   },
 };
 
