@@ -20,6 +20,7 @@ import WhatsAppSticky from "./WhatsAppSticky";
 import CookieBanner from "./CookieBanner";
 import JsonLd from "./JsonLd";
 import RevealInit from "./RevealInit";
+import CTABanner from "./CTABanner";
 
 // Small helper that wraps a section in a reveal-on-scroll container.
 function Reveal({ children }: { children: React.ReactNode }) {
@@ -45,6 +46,12 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <Reveal>
           <Services locale={locale} />
         </Reveal>
+
+        {/* CTA 1: After Services → push towards contact */}
+        <Reveal>
+          <CTABanner locale={locale} variant="contact" />
+        </Reveal>
+
         <Reveal>
           <WhyUs locale={locale} />
         </Reveal>
@@ -54,10 +61,22 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <Reveal>
           <Cases locale={locale} />
         </Reveal>
+
+        {/* CTA 2: After Cases → push towards workshop */}
+        <Reveal>
+          <CTABanner locale={locale} variant="workshop" />
+        </Reveal>
+
         <Workshop locale={locale} />
         <Reveal>
           <Testimonials locale={locale} />
         </Reveal>
+
+        {/* CTA 3: After Testimonials → push towards project start */}
+        <Reveal>
+          <CTABanner locale={locale} variant="process" />
+        </Reveal>
+
         <Reveal>
           <Tools locale={locale} />
         </Reveal>
